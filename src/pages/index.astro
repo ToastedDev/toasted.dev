@@ -1,5 +1,10 @@
 ---
 import MainLayout from "../layouts/main.astro";
+import Discord from "../icons/discord.astro";
+import Globe from "../icons/globe.astro";
+import YouTube from "../icons/youtube.astro";
+import X from "../icons/x.astro";
+import Twitch from "../icons/twitch.astro";
 
 function getAge(birthDate: Date) {
   var today = new Date();
@@ -12,15 +17,59 @@ function getAge(birthDate: Date) {
 ---
 
 <MainLayout>
-  <p>
-    Hey there, my name is <span class="font-semibold text-orange-600"
-      >ToastedToast</span
-    >, but you can just call me <span class="font-semibold text-orange-600"
-      >Toast</span
-    >! I'm a {getAge(new Date("December 6, 2009"))} year old developer who likes
-    to build things for the web and <a
-      href="https://discord.com"
-      class="transition-all hover:opacity-50">Discord</a
-    >.
-  </p>
+  <section class="flex flex-col gap-4">
+    <p>
+      Hey there, my name is <span class="font-semibold text-orange-600"
+        >ToastedToast</span
+      >, but you can just call me <span class="font-semibold text-orange-600"
+        >Toast</span
+      >! I'm a {getAge(new Date("December 6, 2009"))} year old developer who
+      likes to build things for the <span>
+        <Globe class="mb-0.5 inline" /> web</span
+      > and <a
+        href="https://discord.com"
+        class="transition-all hover:opacity-50"
+      >
+        <Discord class="mb-0.5 inline" /> Discord</a
+      >.
+    </p>
+    <ul class="flex flex-col gap-2.5 md:flex-row">
+      <li>
+        <a
+          href="https://youtube.com/@ToastedDev"
+          class="flex w-fit items-center gap-1 transition-all hover:opacity-50"
+        >
+          <YouTube class="h-5 w-5 text-xl" />
+          <p class="text-sm">@ToastedDev</p>
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://x.com/@ToastedDev"
+          class="flex w-fit items-center gap-1 transition-all hover:opacity-50"
+        >
+          <X class="h-5 w-5 text-xl" />
+          <p class="text-sm">@ToastedDev</p>
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://twitch.com/Toasted_Dev"
+          class="flex w-fit items-center gap-1 transition-all hover:opacity-50"
+        >
+          <Twitch class="h-5 w-5 text-xl" />
+          <p class="text-sm">/Toasted_Dev</p>
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://discord.com/invite/HARDDqsEdQ"
+          class="flex w-fit items-center gap-1 transition-all hover:opacity-50"
+        >
+          <Discord class="h-5 w-5 text-xl" />
+          <p class="text-sm">dsc.gg/statsassem</p>
+        </a>
+      </li>
+    </ul>
+  </section>
 </MainLayout>
