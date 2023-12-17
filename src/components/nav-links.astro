@@ -1,0 +1,41 @@
+---
+interface Props {
+  slug: string;
+}
+
+const { slug } = Astro.props;
+
+interface Link {
+  name: string;
+  href: string;
+  slug?: string;
+}
+
+const links: Link[] = [
+  {
+    name: "Home",
+    href: "/",
+  },
+  {
+    name: "Blog",
+    href: "/blog",
+    slug: "/blog",
+  },
+];
+---
+
+<ul class="flex items-center gap-2">
+  {
+    links.map((link) => (
+      <li
+        class:list={[
+          "text-orange-600 transition-all hover:opacity-75",
+          (link.slug ? slug.startsWith(link.slug) : slug === link.href) &&
+            "text-orange-800",
+        ]}
+      >
+        <a href={link.href}>{link.name}</a>
+      </li>
+    ))
+  }
+</ul>
