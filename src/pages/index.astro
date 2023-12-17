@@ -1,5 +1,14 @@
 ---
 import MainLayout from "../layouts/main.astro";
+
+function getAge(birthDate: Date) {
+  var today = new Date();
+  var age = today.getFullYear() - birthDate.getFullYear();
+  var m = today.getMonth() - birthDate.getMonth();
+  if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) age--;
+  if (today.getDate() == birthDate.getDate()) age++;
+  return age;
+}
 ---
 
 <MainLayout>
@@ -8,7 +17,8 @@ import MainLayout from "../layouts/main.astro";
       >ToastedToast</span
     >, but you can just call me <span class="font-semibold text-orange-600"
       >Toast</span
-    >! I'm a 14 year old developer who likes to build things for the web and <a
+    >! I'm a {getAge(new Date("December 6, 2009"))} year old developer who likes
+    to build things for the web and <a
       href="https://discord.com"
       class="transition-all hover:opacity-50">Discord</a
     >.
