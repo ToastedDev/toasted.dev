@@ -1,4 +1,6 @@
 ---
+import Toast from "../icons/toast.astro";
+
 interface Props {
   title?: string;
 }
@@ -19,7 +21,10 @@ const { title } = Astro.props;
       <nav
         class="text-2xl font-semibold text-orange-600 transition-all hover:opacity-75"
       >
-        <a href="/">ToastedToast</a>
+        <a href="/" class="flex items-center gap-2">
+          <Toast class="text-3xl" />
+          <p>ToastedToast</p>
+        </a>
       </nav>
     </header>
     <main>
