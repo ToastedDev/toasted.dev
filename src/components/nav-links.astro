@@ -29,7 +29,7 @@ const links: Link[] = [
     links.map((link) => (
       <li
         class:list={[
-          "text-orange-600 transition-all hover:opacity-75",
+          "text-sm font-semibold text-orange-600 transition-all hover:opacity-75",
           (link.slug ? slug.startsWith(link.slug) : slug === link.href) &&
             "text-orange-800",
         ]}
