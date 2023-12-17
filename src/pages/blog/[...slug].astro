@@ -20,6 +20,7 @@ const { Content } = await post.render();
   <h1 class="text-4xl font-bold">
     {post.data.title}
   </h1>
+  <div class="p-0.5"></div>
   <time class="text-sm" datetime={post.data.createdAt.toLocaleDateString()}>
     {
       post.data.createdAt.toLocaleString(undefined, {
@@ -29,7 +30,7 @@ const { Content } = await post.render();
       })
     }
   </time>
-  <div class="p-1"></div>
+  <div class="p-1.5"></div>
   <article
     class="prose prose-black prose-headings:mt-6 prose-headings:mb-3 prose-a:no-underline prose-a:text-orange-600 max-w-none"
   >
