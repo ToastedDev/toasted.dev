@@ -1,4 +1,6 @@
 ---
+import "../../styles/blog.css";
+
 import { getCollection } from "astro:content";
 import MainLayout from "../../layouts/main.astro";
 
@@ -28,7 +30,9 @@ const { Content } = await post.render();
     }
   </time>
   <div class="p-1"></div>
-  <article class="prose prose-black max-w-none">
+  <article
+    class="prose prose-black prose-headings:mt-6 prose-headings:mb-3 prose-a:no-underline prose-a:text-orange-600 max-w-none"
+  >
     <Content />
   </article>
 </MainLayout>
