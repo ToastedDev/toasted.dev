@@ -10,7 +10,7 @@ const allPosts = await getCollection("blog");
     {
       allPosts.map((post) => (
         <li class="rounded-lg bg-orange-300/50 px-3 py-2 transition-all hover:opacity-50">
-          <a href={`/blog/${post.slug}`}>
+          <a href={`/blog/${post.slug}`} class="h-full w-full">
             <h1 class="text-2xl font-bold">{post.data.title}</h1>
             <p>{post.data.description}</p>
             <time
