@@ -5,7 +5,7 @@ import MainLayout from "../../layouts/main.astro";
 const allPosts = await getCollection("blog");
 ---
 
-<MainLayout>
+<MainLayout title="Blog" description="The place where I dump my thoughts.">
   <div class="grid grid-cols-1 gap-2 md:grid-cols-2">
     {
       allPosts
