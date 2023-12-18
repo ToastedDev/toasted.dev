@@ -5,11 +5,13 @@ import { ViewTransitions } from "astro:transitions";
 
 interface Props {
   title?: string;
+  image?: string;
   description?: string;
 }
 
 const {
   title,
+  image,
   description = "A 14 year old developer who likes to build things for the web and Discord.",
 } = Astro.props;
 ---
@@ -25,14 +27,23 @@ const {
     <meta property="og:title" content="ToastedToast" />
     <meta property="og:description" content={description} />
     <meta property="og:url" content="https://toasted.is-a.dev/" />
-    <meta property="og:image" content="https://toasted.is-a.dev/logo.png" />
     <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary" />
     <meta name="twitter:creator" content="@ToastedDev" />
     <meta name="twitter:creator:id" content="1145171094556426240" />
     <meta name="twitter:title" content="ToastedToast" />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content="https://toasted.is-a.dev/logo.png" />
+    <meta
+      property="og:image"
+      content={image ?? "https://toasted.is-a.dev/logo.png"}
+    />
+    <meta
+      name="twitter:image"
+      content={image ?? "https://toasted.is-a.dev/logo.png"}
+    />
+    <meta
+      name="twitter:card"
+      content={image ? "summary_large_image" : "summary"}
+    />
     <meta name="theme-color" content="#f97316" />
     <ViewTransitions />
   </head>
