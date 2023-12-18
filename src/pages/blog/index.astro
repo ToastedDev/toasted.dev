@@ -6,12 +6,17 @@ const allPosts = await getCollection("blog");
 ---
 
 <MainLayout>
-  <ul class="grid grid-cols-1 gap-2 md:grid-cols-2">
+  <div class="grid grid-cols-1 gap-2 md:grid-cols-2">
     {
-      allPosts.map((post) => (
-        <li class="rounded-lg bg-orange-300/50 px-3 py-2 transition-all hover:opacity-50">
-          <a href={`/blog/${post.slug}`} class="h-full w-full">
+      allPosts
+        .sort((a, b) => b.data.createdAt.getTime() - a.data.createdAt.getTime())
+        .map((post) => (
+          <a
+            href={`/blog/${post.slug}`}
+            class="rounded-lg bg-orange-300/50 px-3 py-2 transition-all hover:opacity-50"
+          >
             <h1 class="text-2xl font-bold">{post.data.title}</h1>
+
             <p>{post.data.description}</p>
             <time
               class="text-xs"
@@ -24,8 +29,7 @@ const allPosts = await getCollection("blog");
               })}
             </time>
           </a>
-        </li>
-      ))
+        ))
     }
-  </ul>
+  </div>
 </MainLayout>
