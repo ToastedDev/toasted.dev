@@ -17,6 +17,9 @@ dependencies:
   '@tailwindcss/typography':
     specifier: ^0.5.10
     version: 0.5.10(tailwindcss@3.3.6)
+  '@vercel/analytics':
+    specifier: ^1.1.1
+    version: 1.1.1
   astro:
     specifier: ^4.0.6
     version: 4.0.6(typescript@5.3.3)
