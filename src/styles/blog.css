@@ -1,4 +1,4 @@
-.prose > :first-child {
+.prose > :first-child:is(p) {
   margin-bottom: -0.4em;
 }
 
