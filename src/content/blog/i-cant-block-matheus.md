@@ -57,7 +57,7 @@ And just to remind you, this all happened while I was asleep.
 
 ## Why can't I just block Matheus?
 
-This is the part that I've been waiting to talk about. After all of that proof, you may be wondering to yourself, "if he's this annoying, why can't you just block him?", and they bring a fair point. I could just hit the "Block" button and move on with my life, **but I can't**. He physically does not let me move on, and here's how he does it:
+This is the part that I've been waiting to talk about. After all of that proof, you may be wondering to yourself, "if he's this annoying, why can't you just block him?", and you bring a fair point. I could just hit the "Block" button and move on with my life, **but I can't**. He physically does not let me move on, and here's how he does it:
 
 ### 1. He pleads
 
