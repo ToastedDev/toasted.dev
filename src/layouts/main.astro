@@ -16,7 +16,11 @@ const {
 } = Astro.props;
 ---
 
-<html lang="en" class="bg-orange-300/50">
+<html
+  lang="en"
+  class="bg-orange-950 text-slate-100"
+  style="color-scheme: dark;"
+>
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -56,7 +60,7 @@ const {
   <body class="mx-auto max-w-3xl p-4">
     <header class="flex items-center justify-between pb-4">
       <nav
-        class="text-2xl font-semibold text-orange-600 transition-all hover:opacity-75"
+        class="text-2xl font-semibold text-orange-500 transition-all hover:opacity-75"
       >
         <a href="/" class="flex items-center gap-2">
           <Toast class="text-3xl" />
