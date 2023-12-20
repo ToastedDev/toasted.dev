@@ -1,0 +1,31 @@
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  @apply bg-orange-950;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply rounded-lg bg-orange-500;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-orange-500/75;
+}
+
+::selection {
+  @apply bg-orange-500;
+}
+
+.prose > :first-child:is(p) {
+  margin-bottom: -0.4em;
+}
+
+.prose a:hover {
+  @apply underline;
+}
