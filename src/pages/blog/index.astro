@@ -13,20 +13,39 @@ const allPosts = await getCollection("blog");
         .map((post) => (
           <a
             href={`/blog/${post.slug}`}
-            class="rounded-lg bg-orange-800/50 px-3 py-2 transition-all hover:opacity-75"
+            class:list={[
+              "relative rounded-lg transition-all hover:opacity-75",
+              !post.data.image && "bg-orange-800/50",
+            ]}
           >
-            <h1 class="text-2xl font-bold">{post.data.title}</h1>
-            <p>{post.data.description}</p>
-            <time
-              class="text-xs text-neutral-300"
-              datetime={post.data.createdAt.toLocaleDateString()}
+            {post.data.image && (
+              <img
+                src={post.data.image}
+                alt={post.data.title}
+                class="absolute top-0 -z-10 h-full w-full rounded-lg object-cover opacity-50"
+              />
+            )}
+            <div
+              class:list={[
+                "flex flex-col gap-2 px-3 py-2",
+                post.data.image && "rounded-lg bg-orange-800/60",
+              ]}
             >
-              {post.data.createdAt.toLocaleString(undefined, {
-                month: "short",
-                day: "numeric",
-                year: "numeric",
-              })}
-            </time>
+              <div class="flex flex-col gap-0.5">
+                <h1 class="text-2xl font-bold">{post.data.title}</h1>
+                <time
+                  class="text-xs text-neutral-300"
+                  datetime={post.data.createdAt.toLocaleDateString()}
+                >
+                  {post.data.createdAt.toLocaleString(undefined, {
+                    month: "short",
+                    day: "numeric",
+                    year: "numeric",
+                  })}
+                </time>
+              </div>
+              <p>{post.data.description}</p>
+            </div>
           </a>
         ))
     }
