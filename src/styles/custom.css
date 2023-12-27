@@ -28,5 +28,5 @@
 }
 
 .prose a:hover {
-  @apply underline;
+  @apply underline underline-offset-4;
 }
