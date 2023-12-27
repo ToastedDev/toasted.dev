@@ -11,27 +11,38 @@ export async function getStaticPaths() {
 }
 
 const { post } = Astro.props;
-const { Content } = await post.render();
+const { Content, remarkPluginFrontmatter } = await post.render();
 ---
 
 <MainLayout
   title={post.data.title}
   description={post.data.description ?? "A blog post."}
-  image={"https://toasted.is-a.dev/" + post.data.image}
+  image={"https://toasted.is-a.dev" + post.data.image}
 >
-  <h1 class="text-4xl font-bold">
-    {post.data.title}
-  </h1>
-  <div class="p-0.5"></div>
-  <time class="text-sm" datetime={post.data.createdAt.toLocaleDateString()}>
-    {
-      post.data.createdAt.toLocaleString(undefined, {
-        month: "short",
-        day: "numeric",
-        year: "numeric",
-      })
-    }
-  </time>
+  <div class="flex flex-col items-center justify-center gap-2 text-center">
+    <h1 class="text-4xl font-bold">
+      {post.data.title}
+    </h1>
+    <div class="flex items-center gap-2 text-sm text-gray-300">
+      <time datetime={post.data.createdAt.toLocaleDateString()}>
+        {
+          post.data.createdAt.toLocaleString(undefined, {
+            month: "short",
+            day: "numeric",
+            year: "numeric",
+          })
+        }
+      </time>
+      <p>·</p>
+      <p>{remarkPluginFrontmatter.minutesRead}</p>
+    </div>
+  </div>
+  <div class="p-1.5"></div>
+  {
+    post.data.image && (
+      <img src={post.data.image} alt={post.data.title} class="rounded-lg" />
+    )
+  }
   <div class="p-1.5"></div>
   <article
     class="prose prose-neutral prose-invert max-w-none prose-headings:mb-3 prose-headings:mt-6 prose-a:text-orange-500 prose-a:no-underline"
