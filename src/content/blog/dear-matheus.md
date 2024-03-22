@@ -10,7 +10,7 @@ This blog post delves into the deep delusion that Matheus has gone through. From
 
 ## Credits
 
-Before we get into this, I'd like to thank [Galvin/Stats100](https://youtube.com/@Stats100), [Charlie from the MrBeast Stats crew](https://twitter.com/charlieashfordd), and [GNZGUY](https://youtube.com/@GNZGUY) for helping me get all of the evidence for this. It's pretty hard to get evidence from a group chat you were kicked out ofjust because you didn't want to tell someone a secret.
+Before we get into this, I'd like to thank [Galvin/Stats100](https://youtube.com/@Stats100), [Charlie from the MrBeast Stats crew](https://twitter.com/charlieashfordd), and [GNZGUY](https://youtube.com/@GNZGUY) for helping me get all of the evidence for this. It's pretty hard to get evidence from a group chat you were kicked out of just because you didn't want to tell someone a secret.
 
 ## Chapter 1: The Backstory
 
@@ -147,7 +147,9 @@ In summary, Matheus likes to blackmail and threaten people just because he's "cu
 
 Thank you for reading all the way through! This took a long time to make, and to witness first-hand as the victim. Again, special thanks to [Galvin/Stats100](https://youtube.com/@Stats100), [Charlie from the MrBeast Stats crew](https://twitter.com/charlieashfordd), and [GNZGUY](https://youtube.com/@GNZGUY) for helping me get the evidence for this. And to everyone else who supported me during my mental breakdown, and who still supported me even after Matheus' delusion.
 
-Also, for those curious, yes I did block him.
+If you want to see the beginning of this whole debacle, check out my new website [matheus.toasted.dev](https://matheus.toasted.dev), which is an archive of his group chat that shows all of the messages on the day of the incident.
+
+Also, for those curious, yes I did block him again.
 
 ![A screenshot showing that I blocked Matheus](/dear-matheus/blocked.png)
 
