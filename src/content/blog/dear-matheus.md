@@ -53,7 +53,7 @@ And by this point, Galvin was already telling him to stop, because this was gett
 
 ![Matheus saying that he's a narcissist](/dear-matheus/im-a-narcissist.png)
 
-And then he quintuples down (that's a word I haven't of until writing this) by agreeing to what I said about him blackmailing me over the biggest secret of my life.
+And then he quintuples down (that's a word I haven't heard of until writing this) by agreeing to what I said about him blackmailing me over the biggest secret of my life.
 
 ![Me saying that I "can't believe Matheus is trying to blackmail me over my biggest secret", and Matheus agreeing](/dear-matheus/matheus-admitting-to-blackmailing-me.png)
 
