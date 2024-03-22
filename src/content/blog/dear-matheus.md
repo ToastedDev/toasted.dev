@@ -4,7 +4,7 @@ description: Who in their right mind would blackmail and threaten someone for a 
 createdAt: 2024-03-22
 ---
 
-Just yesterday as I write this, on March 21st, my friend **Matheusify** (who we'll refer to as **Matheus** from now on) blackmailed and threatened me just because I didn't want to tell him a secret of mine.
+Just yesterday as I write this, on March 21st, my friend (or, well, ex-friend) **Matheusify** (who we'll refer to as **Matheus** from now on) blackmailed and threatened me just because I didn't want to tell him a secret of mine.
 
 This blog post delves into the deep delusion that Matheus has gone through. From the initial incident, to the reaction, to the apology, we've got it all.
 
