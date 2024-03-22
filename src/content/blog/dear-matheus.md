@@ -4,13 +4,13 @@ description: Who in their right mind would blackmail and threaten someone for a 
 createdAt: 2024-03-22
 ---
 
-Just yesterday as I write this, on March 21st, my friend (or, well, ex-friend) **Matheusify** (who we'll refer to as **Matheus** from now on) blackmailed and threatened me just because I didn't want to tell him a secret of mine.
+Just yesterday as I write this, on March 21st, my friend (or, well, ex-friend) **Matheusify**, who we'll refer to as **Matheus** from now on, blackmailed and threatened me just because I didn't want to tell him a secret of mine.
 
 This blog post delves into the deep delusion that Matheus has gone through. From the initial incident, to the reaction, to the apology, we've got it all.
 
 ## Credits
 
-Before we get into this, I'd like to thank [Galvin/Stats100](https://youtube.com/@Stats100), [Charlie from the MrBeast Stats crew](https://twitter.com/charlieashfordd), and [GNZGUY](https://youtube.com/@GNZGUY) for helping me get all of the evidence for this. It's pretty hard to get evidence from a group chat you were kicked out of just because you didn't want to tell someone a secret.
+Before we get into this, I'd like to thank [Galvin/Stats100](https://youtube.com/@Stats100), [Charlie from the MrBeast Stats crew](https://twitter.com/charlieashfordd), [GNZGUY](https://youtube.com/@GNZGUY), and [Dario](https://youtube.com/@DarioCounts) for helping me get all of the evidence for this. It's pretty hard to get evidence from a group chat you were kicked out of just because you didn't want to tell someone a secret.
 
 ## Chapter 1: The Backstory
 
@@ -145,7 +145,7 @@ By the way, Matheus, if you're reading this, your apology has not been accepted.
 
 In summary, Matheus likes to blackmail and threaten people just because he's "curious" of something, and will go to great lengths to prove that he's in the right and that he did nothing wrong.
 
-Thank you for reading all the way through! This took a long time to make, and to witness first-hand as the victim. Again, special thanks to [Galvin/Stats100](https://youtube.com/@Stats100), [Charlie from the MrBeast Stats crew](https://twitter.com/charlieashfordd), and [GNZGUY](https://youtube.com/@GNZGUY) for helping me get the evidence for this. And to everyone else who supported me during my mental breakdown, and who still supported me even after Matheus' delusion.
+Thank you for reading all the way through! This took a long time to make, and to witness first-hand as the victim. Again, special thanks to [Galvin/Stats100](https://youtube.com/@Stats100), [Charlie from the MrBeast Stats crew](https://twitter.com/charlieashfordd), [GNZGUY](https://youtube.com/@GNZGUY), and [Dario](https://youtube.com/@DarioCounts) for helping me get the evidence for this. And to everyone else who supported me during my mental breakdown, and who still supported me even after Matheus' delusion.
 
 If you want to see the beginning of this whole debacle, check out my new website [matheus.toasted.dev](https://matheus.toasted.dev), which is an archive of his group chat that shows all of the messages on the day of the incident.
 
