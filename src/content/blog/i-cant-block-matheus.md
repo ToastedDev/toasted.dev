@@ -5,6 +5,10 @@ createdAt: 2023-12-18
 image: /i-cant-block-matheus/og.jpg
 ---
 
+## UPDATE (03/22/2024)
+
+There's [a part 2 of this now](/blog/dear-matheus), with even worse things than what I described here.
+
 ## UPDATE (12/20/2023)
 
 I'm free.
