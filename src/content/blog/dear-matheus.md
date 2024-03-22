@@ -15,7 +15,7 @@ Before we get into this, I'd like to thank [Galvin/Stats100](https://youtube.com
 
 ## Chapter 1: The Backstory
 
-Just before the incident, I had a huge mental and physcial breakdown. Yes I was physically crying (this will be important later). This was because I did something that I currently do not want to disclose due to privacy reasons. [Choccy](https://youtube.com/@ChoccyStatistics) and Galvin were trying to comfort me, and I was feeling better. I even told Galvin what had happened because I trust him to keep it between the two of us (don't ask him to tell you though). Everything seemed to be going well.
+Just before the incident, I had a huge mental and physical breakdown. Yes I was physically crying (this will be important later). This was because I did something that I currently do not want to disclose due to privacy reasons. [Choccy](https://youtube.com/@ChoccyStatistics) and Galvin were trying to comfort me, and I was feeling better. I even told Galvin what had happened because I trust him to keep it between the two of us (don't ask him to tell you though). Everything seemed to be going well.
 
 Until Matheus entered the chat.
 
