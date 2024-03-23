@@ -9,6 +9,20 @@ Just yesterday as I write this, on March 21st, my friend (or, well, ex-friend) *
 
 This blog post delves into the deep delusion that Matheus has gone through. From the initial incident, to the reaction, to the apology, we've got it all.
 
+## UPDATE (04/23/2024)
+
+Just a few hours after this blog post's release, Matheus decided to "take a break from Discord."
+
+![Matheus' profile, with his display name set to "Taking a Break." and his profile picture being slightly darker](/dear-matheus/update-1-taking-a-break.png)
+
+Though he hasn't taken a break from YouTube. In fact, he commented on my community post about this blog post saying that it's "all lies" and it's just "fake bs that [I] made to ruin [his] image."
+
+![Matheus saying that the post is all lies](/dear-matheus/update-1-lies.png)
+
+I thought [you were sorry for doing all of this](#chapter-6-he-gives-up), but now you're saying I'm lying? Also I thought you said this was a character that you played? Oh well, I guess all of that gets thrown out the window once you actually get exposed in the spotlight.
+
+To be fair, I saw this coming. [He did say he would do this](#its-all-lies), so I'm not surprised.
+
 ## Credits
 
 Before we get into this, I'd like to thank [Galvin/Stats100](https://youtube.com/@Stats100), [Charlie from the MrBeast Stats crew](https://twitter.com/charlieashfordd), [GNZGUY](https://youtube.com/@GNZGUY), and [Dario](https://youtube.com/@DarioCounts) for helping me get all of the evidence for this. It's pretty hard to get evidence from a group chat you were kicked out of just because you didn't want to tell someone a secret.
@@ -108,7 +122,7 @@ Charlie continues, saying that he knew I was crying and he continued, and asks w
 
 After this riviting response, Charlie told him that his reputation was on the line. He responds by saying that it "did nothing to his reputation." Charlie then responds by showing him a screenshot of one of his messages about him removing everyone from his group chat and that he doesn't want to tell anyone what happened because it will "ruin his image." He then responds by saying that he can just say that he "didn't do that" and that "it is all lies."
 
-![Matheus saying that he can just say that it's all lies](/dear-matheus/i-can-just-say-its-all-lies.png)
+<img src="/dear-matheus/i-can-just-say-its-all-lies.png" alt="Matheus saying that he can just say that it's all lies" id="its-all-lies">
 
 Charlie then tells him that I wanted to keep what happened private (which is true), and asking him why he blackmailed and bullied me for it, and asking for the reason if any. He responds by saying that he was simply "curious af" and that he "[won't] stop at any point," along with asking Charlie "since when [was him not] hating on YAB ?! Counts blackmail."
 
