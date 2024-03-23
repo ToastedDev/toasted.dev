@@ -19,19 +19,6 @@ const { Content, remarkPluginFrontmatter } = await post.render();
   description={post.data.description ?? "A blog post."}
   image={"https://toasted.is-a.dev" + post.data.image}
 >
-  {
-    post.data.image && (
-      <>
-        <img
-          src={post.data.image}
-          alt={`${post.data.title} Hero Image`}
-          class="h-[240px] w-full rounded-lg object-cover"
-          transition:name={`${post.data.title} Hero Image`}
-        />
-        <div class="p-2" />
-      </>
-    )
-  }
   <div class="flex flex-col gap-4 pb-2">
     <h1 class="text-4xl font-bold" transition:name={post.data.title}>
       {post.data.title}
@@ -61,6 +48,18 @@ const { Content, remarkPluginFrontmatter } = await post.render();
         </div>
       </div>
     </div>
+    {
+      post.data.image && (
+        <>
+          <img
+            src={post.data.image}
+            alt={`${post.data.title} Hero Image`}
+            class="w-full rounded-lg object-cover"
+            transition:name={`${post.data.title} Hero Image`}
+          />
+        </>
+      )
+    }
   </div>
   <article
     class="prose prose-neutral prose-invert max-w-none prose-headings:mb-3 prose-headings:mt-6 prose-a:text-orange-500 prose-a:no-underline"
