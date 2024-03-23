@@ -6,33 +6,29 @@ const allPosts = await getCollection("blog");
 ---
 
 <MainLayout title="Blog" description="The place where I dump my thoughts.">
-  <div class="grid grid-cols-1 gap-2 md:grid-cols-2">
+  <div class="grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-2">
     {
       allPosts
         .sort((a, b) => b.data.createdAt.getTime() - a.data.createdAt.getTime())
         .map((post) => (
           <a
             href={`/blog/${post.slug}`}
-            class:list={[
-              "relative rounded-lg transition-all hover:opacity-75",
-              !post.data.image && "bg-orange-800/50",
-            ]}
+            class="flex h-full flex-col gap-4 rounded-lg bg-orange-800/50 p-3 transition-all hover:opacity-75"
           >
-            {post.data.image && (
-              <img
-                src={post.data.image}
-                alt={post.data.title}
-                class="absolute top-0 -z-10 h-full w-full rounded-lg object-cover opacity-50"
-              />
-            )}
-            <div
-              class:list={[
-                "flex flex-col gap-2 px-3 py-2",
-                post.data.image && "rounded-lg bg-orange-800/60 h-full",
-              ]}
-            >
+            <img
+              src={post.data.image ?? "/toasted.jpg"}
+              alt={`${post.data.title} Hero Image`}
+              class="h-[150px] w-full rounded-lg object-cover"
+              transition:name={`${post.data.title} Hero Image`}
+            />
+            <div class="flex flex-col gap-2">
               <div class="flex flex-col gap-0.5">
-                <h1 class="text-2xl font-bold">{post.data.title}</h1>
+                <h1
+                  class="text-2xl font-bold"
+                  transition:name={post.data.title}
+                >
+                  {post.data.title}
+                </h1>
                 <time
                   class="text-xs text-neutral-300"
                   datetime={post.data.createdAt.toLocaleDateString()}
