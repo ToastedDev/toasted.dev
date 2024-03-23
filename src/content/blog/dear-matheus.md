@@ -9,7 +9,7 @@ Just yesterday as I write this, on March 21st, my friend (or, well, ex-friend) *
 
 This blog post delves into the deep delusion that Matheus has gone through. From the initial incident, to the reaction, to the apology, we've got it all.
 
-## UPDATE (04/23/2024)
+## UPDATE (03/23/2024)
 
 Just a few hours after this blog post's release, Matheus decided to "take a break from Discord."
 
