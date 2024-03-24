@@ -3,6 +3,8 @@ import tailwind from "@astrojs/tailwind";
 import { defineConfig } from "astro/config";
 import { toString } from "mdast-util-to-string";
 import getReadingTime from "reading-time";
+import rehypeSlug from "rehype-slug";
+import rehypeAutolinkHeadings from "rehype-autolink-headings";
 
 function remarkReadingTime() {
   return function (tree, { data }) {
@@ -20,5 +22,16 @@ export default defineConfig({
   integrations: [tailwind(), sitemap()],
   markdown: {
     remarkPlugins: [remarkReadingTime],
+    rehypePlugins: [
+      rehypeSlug,
+      [
+        rehypeAutolinkHeadings,
+        {
+          properties: {
+            className: ["anchor"],
+          },
+        },
+      ],
+    ],
   },
 });

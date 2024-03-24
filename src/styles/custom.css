@@ -30,3 +30,26 @@
 .prose a:hover {
   @apply underline underline-offset-4;
 }
+
+.prose .anchor {
+  @apply absolute no-underline opacity-0 transition-all hover:no-underline;
+
+  margin-left: -1em;
+  padding-right: 0.5em;
+  width: 80%;
+  max-width: 700px;
+  cursor: pointer;
+}
+
+.anchor:hover {
+  @apply opacity-100;
+}
+
+.prose .anchor:after {
+  @apply text-orange-500;
+  content: "#";
+}
+
+.prose *:hover > .anchor {
+  @apply visible;
+}
