@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import MainLayout from "../../layouts/main.astro";
+import toastedLogo from "@assets/toasted.jpg";
 import { Image } from "astro:assets";
 
 export async function getStaticPaths() {
@@ -26,11 +27,9 @@ const { Content, remarkPluginFrontmatter } = await post.render();
     </h1>
     <div class="flex items-center gap-2">
       <Image
-        src="/toasted.jpg"
+        src={toastedLogo}
         alt="ToastedToast"
-        width={48}
-        height={48}
-        class="rounded-full"
+        class="h-12 w-12 rounded-full"
       />
       <div>
         <p class="text-lg font-semibold">ToastedToast</p>
@@ -55,8 +54,6 @@ const { Content, remarkPluginFrontmatter } = await post.render();
           <Image
             src={post.data.image}
             alt={`${post.data.title} Hero Image`}
-            width={736}
-            height={414}
             class="w-full rounded-lg object-cover"
             transition:name={`${post.data.title} Hero Image`}
           />

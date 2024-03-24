@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import MainLayout from "../../layouts/main.astro";
+import toastedLogo from "@assets/toasted.jpg";
 import { Image } from "astro:assets";
 
 const allPosts = await getCollection("blog");
@@ -17,10 +18,8 @@ const allPosts = await getCollection("blog");
             class="flex h-full flex-col gap-4 rounded-lg bg-orange-800/50 p-3 transition-all hover:opacity-75"
           >
             <Image
-              src={post.data.image ?? "/toasted.jpg"}
+              src={post.data.image ?? toastedLogo}
               alt={`${post.data.title} Hero Image`}
-              width={340}
-              height={150}
               class="h-[150px] w-full rounded-lg object-cover"
               transition:name={`${post.data.title} Hero Image`}
             />
