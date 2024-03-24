@@ -15,13 +15,39 @@ Just a few hours after this blog post's release, Matheus decided to "take a brea
 
 ![Matheus' profile, with his display name set to "Taking a Break." and his profile picture being slightly darker](/dear-matheus/update-1-taking-a-break.png)
 
-Though he hasn't taken a break from YouTube. In fact, he commented on my community post about this blog post saying that it's "all lies" and it's just "fake bs that [I] made to ruin [his] image."
+He also took a break from YouTube. But not before he commented on my community post about this blog post saying that it's "all lies" and it's just "fake bs that [I] made to ruin [his] image."
 
 ![Matheus saying that the post is all lies](/dear-matheus/update-1-lies.png)
 
 I thought [you were sorry for doing all of this](#chapter-6-he-gives-up), but now you're saying I'm lying? Also I thought you said this was a character that you played? Oh well, I guess all of that gets thrown out the window once you actually get exposed in the spotlight.
 
 To be fair, I saw this coming. [He did say he would do this](#its-all-lies), so I'm not surprised.
+
+## UPDATE (03/24/2024)
+
+The same day that I made [that last update](#update-03232024), he came back on Discord. That was a short break.
+
+![Matheus' profile, showing that it is back to normal](/dear-matheus/update-2-comeback.png)
+
+When he came back, he decided to take things up a notch. He brought back the [infamous red profile and angry character](#red-profile) from the initial incident.
+
+![Matheus' profile, with his display name set as "Evilify", with the same red profile picture from the incident](/dear-matheus/update-2-evilify.png)
+
+He then started posting screenshots of something private with him and [TERA](https://youtube.com/@TERA_TV) (which I won't include here for his own privacy) and started using that as blackmail.
+
+![Matheus saying "did you really think I wouldn't [screenshot] that to use as blackmail"](/dear-matheus/update-2-blackmail.png)
+
+He also told me to kill myself in his about me.
+
+![Matheus' profile, showing his about me that says "Kys toast"](/dear-matheus/update-2-kys.png)
+
+There was so much more, but I can't include it all in this update, otherwise just this update alone would be a 10 minute read. Though I'm considering making this a separate blog post, as this whole situation is its own can of worms.
+
+Though, he did [actually apologize on his community tab on his YouTube channel](https://www.youtube.com/post/UgkxWKCH9PzwZElvSxi9sj4XPHYiiIRuuVc-). That's something!
+
+![A screenshot of Matheus' apology on his community tab on YouTube](/dear-matheus/update-2-apology.png)
+
+Though, I still do not accept this apology. Unless I see actual change in Matheus, I'm not going to accept him as my friend.
 
 ## Credits
 
@@ -92,7 +118,7 @@ Later on in the conversation, he changes everything about his profile to just qu
 
 And then he doubles down on this, changing his profile to all red and setting his status to "Not apologizing as I believe I am not in the wrong."
 
-![A screenshot of Matheus' profile, with his status saying "Not apologizing as I believe I am not in the wrong."](/dear-matheus/i-believe-i-am-not-in-the-wrong.png)
+<img src="/dear-matheus/i-believe-i-am-not-in-the-wrong.png" alt="A screenshot of Matheus' profile, with his status saying &quot;Not apologizing as I believe I am not in the wrong.&quot;" id="red-profile">
 
 His about me also says "Things are not how they seem" in morse code.
 
