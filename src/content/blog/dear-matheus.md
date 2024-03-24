@@ -118,7 +118,11 @@ Later on in the conversation, he changes everything about his profile to just qu
 
 And then he doubles down on this, changing his profile to all red and setting his status to "Not apologizing as I believe I am not in the wrong."
 
-<img src="@assets/dear-matheus/i-believe-i-am-not-in-the-wrong.png" alt="A screenshot of Matheus' profile, with his status saying &quot;Not apologizing as I believe I am not in the wrong.&quot;" id="red-profile">
+<div id="red-profile">
+
+![A screenshot of Matheus' profile, with his status saying "Not apologizing as I believe I am not in the wrong."](@assets/dear-matheus/i-believe-i-am-not-in-the-wrong.png)
+
+</div>
 
 His about me also says "Things are not how they seem" in morse code.
 
@@ -148,7 +152,11 @@ Charlie continues, saying that he knew I was crying and he continued, and asks w
 
 After this riviting response, Charlie told him that his reputation was on the line. He responds by saying that it "did nothing to his reputation." Charlie then responds by showing him a screenshot of one of his messages about him removing everyone from his group chat and that he doesn't want to tell anyone what happened because it will "ruin his image." He then responds by saying that he can just say that he "didn't do that" and that "it is all lies."
 
-<img src="@assets/dear-matheus/i-can-just-say-its-all-lies.png" alt="Matheus saying that he can just say that it's all lies" id="its-all-lies">
+<div id="its-all-lies">
+
+![Matheus saying that he can just say that it's all lies](@assets/dear-matheus/i-can-just-say-its-all-lies.png)
+
+</div>
 
 Charlie then tells him that I wanted to keep what happened private (which is true), and asking him why he blackmailed and bullied me for it, and asking for the reason if any. He responds by saying that he was simply "curious af" and that he "[won't] stop at any point," along with asking Charlie "since when [was him not] hating on YAB ?! Counts blackmail."
 
