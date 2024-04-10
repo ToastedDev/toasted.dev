@@ -1,11 +1,11 @@
 ---
 import MainLayout from "../layouts/main.astro";
 import Discord from "../icons/discord.astro";
-import Globe from "../icons/globe.astro";
 import YouTube from "../icons/youtube.astro";
 import X from "../icons/x.astro";
 import GitHub from "../icons/github.astro";
 import Twitch from "../icons/twitch.astro";
+import { getCollection } from "astro:content";
 
 function getAge(birthDate: Date) {
   var today = new Date();
@@ -15,6 +15,11 @@ function getAge(birthDate: Date) {
   if (today.getDate() == birthDate.getDate()) age++;
   return age;
 }
+
+const posts = await getCollection("blog");
+const last3Posts = posts
+  .sort((a, b) => b.data.createdAt.getTime() - a.data.createdAt.getTime())
+  .slice(-3);
 ---
 
 <MainLayout>
@@ -76,6 +81,38 @@ function getAge(birthDate: Date) {
           </div>
         </a>
       </li>
+    </ul>
+  </section>
+  <section class="pt-6">
+    <h2 class="text-2xl font-bold">I also write sometimes</h2>
+    <ul class="flex flex-col gap-0.5 pt-1">
+      {
+        last3Posts.map((post) => (
+          <li>
+            <a
+              href={`/blog/${post.slug}`}
+              class="group group flex w-fit items-center gap-2 text-lg"
+            >
+              <time
+                datetime={post.data.createdAt.toLocaleDateString()}
+                class="font-semibold text-orange-500"
+              >
+                {post.data.createdAt.toLocaleString(undefined, {
+                  month: "short",
+                  day: "numeric",
+                  year: "numeric",
+                })}
+              </time>
+              <p
+                class="underline-offset-4 group-hover:underline"
+                transition:name={post.data.title}
+              >
+                {post.data.title}
+              </p>
+            </a>
+          </li>
+        ))
+      }
     </ul>
   </section>
 </MainLayout>
