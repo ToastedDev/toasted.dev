@@ -16,7 +16,7 @@
     "@astrojs/tailwind": "^5.1.0",
     "@fontsource-variable/nunito-sans": "^5.0.14",
     "@tailwindcss/typography": "^0.5.13",
-    "astro": "^4.8.3",
+    "astro": "^4.9.1",
     "markdown-it": "^14.1.0",
     "mdast-util-to-string": "^4.0.0",
     "reading-time": "^1.5.0",
