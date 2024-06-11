@@ -19,7 +19,7 @@ function getAge(birthDate: Date) {
 const posts = await getCollection("blog");
 const last3Posts = posts
   .sort((a, b) => b.data.createdAt.getTime() - a.data.createdAt.getTime())
-  .slice(-3);
+  .slice(0, 3);
 ---
 
 <MainLayout>
@@ -91,7 +91,7 @@ const last3Posts = posts
           <li>
             <a
               href={`/blog/${post.slug}`}
-              class="group group flex w-fit items-center gap-2 text-lg"
+              class="group flex w-fit items-center gap-2 text-lg"
             >
               <time
                 datetime={post.data.createdAt.toLocaleDateString()}
