@@ -9,7 +9,6 @@ export const collections = {
         description: z.string().optional(),
         createdAt: z.date(),
         image: image().optional(),
-        ogImage: z.string().optional(),
       }),
   }),
 };

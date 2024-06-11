@@ -3,7 +3,6 @@ title: Good morning, YouTube.
 description: One night, YouTube just decided to terminate my channel out of nowhere. Here's the full story.
 createdAt: 2024-06-10
 image: "@assets/good-morning-youtube/og.jpg"
-ogImage: "/good-morning-youtube/og.jpg"
 ---
 
 On June 7th at 2:34 PM UTC, my YouTube channel with over 14,000 subscribers was terminated off of the platform. Why? Because of "circumvention of a ban". But to understand why this happened, we need to rewind back in time a bit...
