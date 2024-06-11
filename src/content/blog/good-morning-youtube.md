@@ -18,7 +18,7 @@ Back in December 16th, 2022, when I only had 1.2K subscribers, I was a naive lit
 
 Just a few days prior, I had hired a new stream host. Their name was ZyboStats. Little did I know that this was actually an alias for two community members working together to target my channel and others like it, Ummerate Madness and Theolikee.
 
-Just the name "Theolikee" already gives off shivers to the stats community, but if you're not shaking in your chair already, let me explain who he is. **Theolikee**, better known as just **Theo** (no not Theo Browne, he's cool), or Lily, had a _bit_ of a reputation in the community for targeting people's channels, tricking them into letting him stream on their channel, and then playing TOS-breraking content on their channels (for moral reasons I shall not state exactly what it is).
+Just the name "Theolikee" already gives off shivers to the stats community, but if you're not shaking in your chair already, let me explain who he is. **Theolikee**, better known as just **Theo** (no not [Theo Browne](https://youtube.com/@t3dotgg), he's cool), or Lily, had a _bit_ of a reputation in the community for targeting people's channels, tricking them into letting him stream on their channel, and then playing TOS-breraking content on their channels (for moral reasons I shall not state exactly what it is).
 
 At the time, I was just one of many targets. And they had tricked me successfully. Ummerate started streaming on my channel just as normal, and I went to bed because it was getting late.
 
