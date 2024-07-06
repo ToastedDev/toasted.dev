@@ -1,0 +1,113 @@
+---
+import { Image } from "astro:assets";
+import MainLayout from "../layouts/main.astro";
+
+interface Project {
+  title: string;
+  description: string;
+  href: string;
+  image: string;
+  years: {
+    from: number;
+    to?: number;
+  };
+}
+
+const projects: Project[] = [
+  {
+    title: "Trackify (previously Graphify)",
+    description:
+      "The best source of live statistics on YouTube. Timelapses, visualizations, and livestreams.",
+    href: "https://yotuube.com/@trackifycounts",
+    image:
+      "https://yt3.googleusercontent.com/NOiUhzzxQ2nzEoLHek_bQFdrXMFJQmHZ0rh3tFclV06ofMworZqk5XHXsQSNbOXW2VLUnVBJ5AA=s160-c-k-c0x00ffffff-no-rj",
+    years: {
+      from: 2021,
+    },
+  },
+  {
+    title: "toasted.dev",
+    description: "My personal website. It's kind of cool, I guess.",
+    href: "https://toasted.dev",
+    image: "/logo.png",
+    years: {
+      from: 2023,
+    },
+  },
+  {
+    title: "GitRover",
+    description: "The better GitHub CLI we all needed.",
+    href: "https://gr.js.org",
+    image: "https://gr.js.org/logo.png",
+    years: {
+      from: 2024,
+    },
+  },
+  {
+    title: "Countify",
+    description:
+      "Keep your counting channel clean and organized with Countify.",
+    href: "https://countify.fun",
+    image: "https://countify.fun/logo.png",
+    years: {
+      from: 2023,
+    },
+  },
+  {
+    title: "Statistical",
+    description:
+      "Get immediate updates when your favorite channel gets a new subscriber update.",
+    href: "https://statistical.vercel.app",
+    image: "https://statistical.vercel.app/statistical.png",
+    years: {
+      from: 2023,
+    },
+  },
+  {
+    title: "YAB ?! Counts",
+    description: "Reimagining the concept of live counters.",
+    href: "https://yabcounts.com",
+    image:
+      "https://yt3.googleusercontent.com/t9qHS6Jv2_22NiVupgk3gTbto-gOsFgGqyLyK7wpS66o9bsSdCXm1YExeR_uOWYAKrMK4UUy=s160-c-k-c0x00ffffff-no-rj",
+    years: {
+      from: 2023,
+      to: 2024,
+    },
+  },
+];
+---
+
+<MainLayout title="Projects" description="Some of the projects I've worked on.">
+  <h1 class="text-4xl font-bold">Projects</h1>
+  <p class="mt-2">
+    Over the years worked on a lot of projects. Here are some that I am most
+    proud of.
+  </p>
+  <div class="mt-2 grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-2">
+    {
+      projects.map((project) => (
+        <a
+          href={project.href}
+          class="flex h-full flex-col gap-2 rounded-lg bg-orange-800/50 p-3 transition-all hover:opacity-75"
+        >
+          <div class="flex items-start justify-between">
+            <div class="flex flex-col gap-0.5">
+              <h1 class="text-2xl font-bold">{project.title}</h1>
+              <p class="text-xs text-neutral-300">
+                {project.years.from}-{project.years.to ?? "Now"}
+              </p>
+            </div>
+            <Image
+              src={project.image}
+              width={50}
+              height={50}
+              alt={`${project.title} Logo`}
+              class="rounded-lg"
+            />
+          </div>
+          <p>{project.description}</p>
+        </a>
+      ))
+    }
+  </div>
+</MainLayout>
