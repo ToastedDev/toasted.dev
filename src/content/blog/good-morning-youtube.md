@@ -9,7 +9,7 @@ On June 7th at 2:34 PM UTC, my YouTube channel with over 14,000 subscribers was 
 
 ## Chapter 0: Important Info
 
-Before we start, if you're reading this as a fan of Graphify, please make sure to [subscribe to Trackify](https://youtube.com/@TrackifyCounts). It's our new channel. We had to rebrand to avoid this situation happening again. Hopefully it doesn't.
+Before we start, if you're reading this as a fan of Graphify, please make sure to [subscribe to MinMax](https://youtube.com/@MinMaxStats). It's our new channel. We had to rebrand to avoid this situation happening again. Hopefully it doesn't.
 
 ## Chapter 1: The First Termination
 
@@ -61,7 +61,7 @@ I didn't mention this either but I actually got monetized on Graphify, but we ha
 
 ## Chapter 5: The Aftermath
 
-But I didn't give up. I made another channel ([subscribe btw](https://youtube.com/@TrackifyCounts)) and started grinding again. I restarted my 24/7 livestream, re-edited my last timelapse and posted it onto the channel. And that's where we are today.
+But I didn't give up. I made another channel ([subscribe btw](https://youtube.com/@MinMaxStats)) and started grinding again. I restarted my 24/7 livestream, re-edited my last timelapse and posted it onto the channel. And that's where we are today.
 
 Later on, my friend, Graphify team member, and member of the MrBeast Stats crew, [Charlie](https://twitter.com/charlieashfordd) (you might remember him from the [Matheus incident](/blog/dear-matheus), he helped out a lot with that), talked with YouTube Support about the terminated 14K subscriber channel and the 1K channel. They told us to fill out a form of what happened to the 1K channel and said to wait at least 3 working days for a response. As of writing this, we have not recieved a response. I'll update this blog post when we do, though.
 
