@@ -21,8 +21,8 @@ importers:
         specifier: ^5.1.0
         version: 5.1.0(astro@4.15.4(rollup@4.21.2)(typescript@5.5.4))(tailwindcss@3.4.10)
       '@fontsource-variable/nunito-sans':
-        specifier: ^5.0.15
-        version: 5.0.15
+        specifier: ^5.0.16
+        version: 5.0.16
       '@tailwindcss/typography':
         specifier: ^0.5.15
         version: 0.5.15(tailwindcss@3.4.10)
@@ -389,8 +389,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@fontsource-variable/nunito-sans@5.0.15':
-    resolution: {integrity: sha512-ql/SMvLhwmJ7wzLY2FiGNutcrK9weDCAQr6Mt4R9DTxJeMVA8bSnEMirHEqMm2bRas+0apPP8TEUZNXztnjvBw==}
+  '@fontsource-variable/nunito-sans@5.0.16':
+    resolution: {integrity: sha512-sK9HFql7cYAobwuh/slMV/U2xtc0nU9N1xzbQgRwyXzlwkAnH8BkgTZk5fe8bGA99rVaDTJWuxpKyVhckwDCtQ==}
 
   '@img/sharp-darwin-arm64@0.33.5':
     resolution: {integrity: sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==}
@@ -2705,7 +2705,7 @@ snapshots:
   '@esbuild/win32-x64@0.21.5':
     optional: true
 
-  '@fontsource-variable/nunito-sans@5.0.15': {}
+  '@fontsource-variable/nunito-sans@5.0.16': {}
 
   '@img/sharp-darwin-arm64@0.33.5':
     optionalDependencies:
