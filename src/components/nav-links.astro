@@ -34,12 +34,16 @@ const links: Link[] = [
       <li
         class:list={[
           "font-semibold underline-offset-4 transition-all hover:opacity-75",
-          (link.slug ? slug.startsWith(link.slug) : slug === link.href)
+          (
+            link.slug
+              ? slug.startsWith(link.slug)
+              : slug === link.href || slug === link.href + "/"
+          )
             ? "text-orange-300 underline"
             : "text-orange-500 hover:underline",
         ]}
       >
-        <a href={link.href}>{link.name}</a>
+        <a href={link.href}>{link.name} </a>
       </li>
     ))
   }
