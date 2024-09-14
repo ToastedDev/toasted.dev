@@ -6,6 +6,8 @@ import getReadingTime from "reading-time";
 import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 
+import react from "@astrojs/react";
+
 function remarkReadingTime() {
   return function (tree, { data }) {
     const textOnPage = toString(tree);
@@ -19,7 +21,7 @@ function remarkReadingTime() {
 // https://astro.build/config
 export default defineConfig({
   site: "https://toasted.dev",
-  integrations: [tailwind(), sitemap()],
+  integrations: [tailwind(), sitemap(), react()],
   markdown: {
     remarkPlugins: [remarkReadingTime],
     rehypePlugins: [

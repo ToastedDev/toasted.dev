@@ -11,10 +11,12 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.3",
+    "@astrojs/react": "^3.6.2",
     "@astrojs/rss": "^4.0.7",
     "@astrojs/sitemap": "^3.1.6",
     "@astrojs/tailwind": "^5.1.0",
     "@fontsource-variable/nunito-sans": "^5.0.16",
+    "@radix-ui/react-dropdown-menu": "^2.1.1",
     "@tailwindcss/typography": "^0.5.15",
     "astro": "^4.15.4",
     "markdown-it": "^14.1.0",
@@ -25,6 +27,7 @@
     "sanitize-html": "^2.13.0",
     "sharp": "^0.33.5",
     "tailwindcss": "^3.4.10",
+    "tailwindcss-animate": "^1.0.7",
     "typescript": "^5.6.2"
   },
   "devDependencies": {
@@ -33,6 +36,5 @@
     "prettier": "^3.3.3",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.6.6"
-  },
-  "packageManager": "pnpm@9.2.0+sha512.98a80fd11c2e7096747762304106432b3ddc67dcf54b5a8c01c93f68a2cd5e05e6821849522a06fb76284d41a2660d5e334f2ee3bbf29183bf2e739b1dafa771"
+  }
 }
