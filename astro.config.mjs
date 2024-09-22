@@ -5,11 +5,11 @@ import { toString } from "mdast-util-to-string";
 import getReadingTime from "reading-time";
 import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
-
 import react from "@astrojs/react";
+import vercel from "@astrojs/vercel/serverless";
 
 function remarkReadingTime() {
-  return function (tree, { data }) {
+  return function(tree, { data }) {
     const textOnPage = toString(tree);
     const readingTime = getReadingTime(textOnPage);
     // readingTime.text will give us minutes read as a friendly string,
@@ -22,6 +22,7 @@ function remarkReadingTime() {
 export default defineConfig({
   site: "https://toasted.dev",
   integrations: [tailwind(), sitemap(), react()],
+
   markdown: {
     remarkPlugins: [remarkReadingTime],
     rehypePlugins: [
@@ -36,4 +37,7 @@ export default defineConfig({
       ],
     ],
   },
+
+  output: "server",
+  adapter: vercel(),
 });
