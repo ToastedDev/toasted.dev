@@ -19,19 +19,22 @@ const links = ["All channels", "ToastedToast", "MinMax"];
 
 const channel = Astro.url.searchParams.get("channel");
 
-function splitByMonth(data: Video[]): Record<string, Video[]> {
-  return data.reduce((acc, item) => {
-    const date = new Date(item.published_at);
-    const month =
-      date.toLocaleDateString("en-US", { month: "long" }) +
-      " " +
-      date.getFullYear();
-    if (!acc[month]) {
-      acc[month] = [];
-    }
-    acc[month].push(item);
-    return acc;
-  }, {});
+function splitByMonth(data: Video[]) {
+  return data.reduce(
+    (acc, item) => {
+      const date = new Date(item.published_at);
+      const month =
+        date.toLocaleDateString("en-US", { month: "long" }) +
+        " " +
+        date.getFullYear();
+      if (!acc[month]) {
+        acc[month] = [];
+      }
+      acc[month].push(item);
+      return acc;
+    },
+    {} as Record<string, Video[]>,
+  );
 }
 
 const res = await fetch(
