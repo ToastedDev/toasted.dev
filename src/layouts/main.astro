@@ -3,8 +3,8 @@ import "@fontsource-variable/nunito-sans";
 import "../styles/custom.css";
 
 import Toast from "../icons/toast.astro";
-import { NavDropdown } from "../components/nav-dropdown.tsx";
-import { ViewTransitions } from "astro:transitions";
+import Navbar from "../components/navbar/index.astro";
+import { ClientRouter } from "astro:transitions";
 
 interface Props {
   title?: string;
@@ -65,7 +65,7 @@ const {
       content={image ? "summary_large_image" : "summary"}
     />
     <meta name="theme-color" content="#f97316" />
-    <ViewTransitions />
+    <ClientRouter />
   </head>
   <body>
     <div class="mx-auto max-w-3xl p-4">
@@ -78,7 +78,7 @@ const {
             <p>ToastedToast</p>
           </a>
         </nav>
-        <NavDropdown slug={Astro.url.pathname} client:load />
+        <Navbar slug={Astro.url.pathname} />
       </header>
       <main>
         <section class="mb-3 rounded-lg bg-orange-800/50 px-3 py-2">
