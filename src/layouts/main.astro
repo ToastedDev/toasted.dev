@@ -69,17 +69,7 @@ const {
   </head>
   <body>
     <div class="mx-auto max-w-3xl p-4">
-      <header class="flex items-center justify-between pb-4">
-        <nav
-          class="text-3xl font-semibold text-orange-500 transition-all hover:opacity-75"
-        >
-          <a href="/" class="flex items-center gap-2">
-            <Toast class="text-4xl" />
-            <p>ToastedToast</p>
-          </a>
-        </nav>
-        <Navbar slug={Astro.url.pathname} />
-      </header>
+      <Navbar />
       <main>
         <section class="mb-3 rounded-lg bg-orange-800/50 px-3 py-2">
           Goodbye <b>toasted.is-a.dev</b>, hello <b>toasted.dev</b>! In
