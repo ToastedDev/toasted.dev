@@ -3,6 +3,7 @@ title: Dear Matheus, This Is Ridiculous
 description: Who in their right mind would blackmail and threaten someone for a secret? Apparently Matheus would.
 createdAt: 2024-03-22
 image: "@assets/dear-matheus/og.jpg"
+series: matheus
 ---
 
 Just yesterday as I write this, on March 21st, my friend (or, well, ex-friend) **Matheusify**, who we'll refer to as **Matheus** from now on, blackmailed and threatened me just because I didn't want to tell him a secret of mine.

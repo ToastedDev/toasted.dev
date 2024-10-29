@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import MainLayout from "../../layouts/main.astro";
 import { Image, getImage } from "astro:assets";
+import { getEntry } from "astro:content";
 
 export async function getStaticPaths() {
   const blogEntries = await getCollection("blog");
@@ -15,13 +16,15 @@ const { post } = Astro.props;
 const ogImage = post.data.image
   ? await getImage({ src: post.data.image })
   : null;
+const series = post.data.series ? await getEntry(post.data.series) : null;
+const seriesPosts = post.data.series ? (await getCollection("blog")).filter((p) => p.data.series?.id === post.data.series!.id).sort((a, b) => a.data.createdAt.getTime() - b.data.createdAt.getTime()) : [];
 const { Content, remarkPluginFrontmatter } = await post.render();
 ---
 
 <MainLayout
   title={post.data.title}
   description={post.data.description ?? "A blog post."}
-  image={ogImage ? "https://toasted.is-a.dev" + ogImage.src : undefined}
+  image={ogImage ? "https://toasted.dev" + ogImage.src : undefined}
 >
   <div class="flex flex-col gap-4 pb-2">
     <div class="flex flex-col gap-2">
@@ -44,15 +47,23 @@ const { Content, remarkPluginFrontmatter } = await post.render();
     </div>
     {
       post.data.image && (
-        <>
-          <Image
-            src={post.data.image}
-            alt={`${post.data.title} Hero Image`}
-            class="w-full rounded-lg object-cover"
-            transition:name={`${post.data.title} Hero Image`}
-          />
-        </>
+        <Image
+          src={post.data.image}
+          alt={`${post.data.title} Hero Image`}
+          class="w-full rounded-lg object-cover"
+          transition:name={`${post.data.title} Hero Image`}
+        />
       )
+    }
+    {series && 
+      <hr class="border-orange-500" />
+      <div class="flex flex-col gap-1">
+        <p class="text-2xl font-bold">
+          This post is part of the <a href={`/blog/series/${series.id}`} class="text-orange-500 hover:underline hover:underline-offset-4">{series.data.title}</a> series.
+        </p>
+        <p>You are currently reading post {seriesPosts.findIndex((p) => p.slug === post.slug) + 1} of {seriesPosts.length}.</p>
+      </div>
+      <hr class="border-orange-500" />
     }
   </div>
   <article
