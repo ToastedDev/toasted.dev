@@ -11,7 +11,6 @@ export async function GET(ctx: APIContext) {
     title: "ToastedToast's blog",
     description: "The place where I dump my thoughts.",
     site: ctx.site ?? "https://toasted.dev",
-    stylesheet: "/rss/styles.xsl",
     items: posts
       .sort((a, b) => b.data.createdAt.getTime() - a.data.createdAt.getTime())
       .map((post) => ({
