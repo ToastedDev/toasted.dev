@@ -1,61 +1,8 @@
 ---
+import VideosList from "src/components/videos-list.astro";
 import MainLayout from "../layouts/main.astro";
-import Camera from "../icons/camera.astro";
-import Live from "../icons/live.astro";
-import Star from "../icons/star.astro";
-
-interface Video {
-  id: string;
-  title: string;
-  url: string;
-  is_live: boolean;
-  is_spotlight: boolean;
-  views: number;
-  published_at: number;
-  channel_name: string;
-}
 
 const links = ["All channels", "ToastedToast", "MinMax"];
-
-const channel = Astro.url.searchParams.get("channel");
-
-function splitByMonth(data: Video[]) {
-  return data.reduce(
-    (acc, item) => {
-      const date = new Date(item.published_at);
-      const month =
-        date.toLocaleDateString("en-US", { month: "long" }) +
-        " " +
-        date.getFullYear();
-      if (!acc[month]) {
-        acc[month] = [];
-      }
-      acc[month].push(item);
-      return acc;
-    },
-    {} as Record<string, Video[]>,
-  );
-}
-
-const res = await fetch(
-  `https://videos.toasted.dev/videos${channel ? `?channel=${channel}` : ""}`,
-);
-const { videos }: { videos: Video[] } = await res.json();
-const separatedVideos = splitByMonth(videos);
-
-function formatNumber(num: number) {
-  if (num >= 1_000_000) {
-    return (num / 1_000_000).toFixed(1) + "m";
-  } else if (num >= 1_000) {
-    return (num / 1_000).toFixed(1) + "k";
-  }
-  return num.toString();
-}
-
-Astro.response.headers.set(
-  "Cache-Control",
-  "public, max-age=300, s-maxage=3600",
-);
 ---
 
 <MainLayout title="Videos" description="Some cool stuff I've made on YouTube.">
@@ -68,148 +15,34 @@ Astro.response.headers.set(
       >Aaron Francis</a
     >.
   </p>
-  <div class="mt-2 flex flex-col gap-3 md:flex-row">
-    <aside class="flex shrink-0 flex-col gap-1 md:w-48">
-      {
-        links.map((link) => (
-          <a
-            href={link.includes("All") ? "/videos" : `/videos?channel=${link}`}
-            class:list={[
-              "flex items-center gap-3 rounded-lg px-3 py-1.5 transition-all hover:bg-orange-900/50",
-              (
-                link.includes("All")
-                  ? Astro.url.searchParams.get("channel") === null
-                  : Astro.url.searchParams.get("channel") === link
-              )
-                ? "bg-orange-900"
-                : "",
-            ]}
-          >
-            <p class="font-bold">{link}</p>
-          </a>
-        ))
-      }
-    </aside>
-    <div class="flex flex-1 flex-grow flex-col gap-3">
-      <div class="flex flex-col gap-1">
-        <div
-          class="flex items-center gap-1.5 text-sm uppercase tracking-widest text-orange-500"
-        >
-          <div class="w-[13px] border-b border-orange-700"></div>
-          <p>Spotlight</p>
-          <Star class="h-5 w-5" />
-          <div class="w-full border-b border-orange-700"></div>
-        </div>
-        <ul class="flex flex-col">
-          {
-            videos
-              .filter((video) => video.is_spotlight)
-              .map((video) => (
-                <li>
-                  <a
-                    href={
-                      video.url ?? `https://youtube.com/watch?v=${video.id}`
-                    }
-                    target="_blank"
-                    class="flex items-start space-x-3 rounded-lg px-4 py-3 transition-all hover:bg-orange-900/50"
-                  >
-                    <div class="shrink-0">
-                      {video.is_live ? (
-                        <Live class="mt-1 text-orange-500" />
-                      ) : (
-                        <Camera class="mt-1 text-orange-500" />
-                      )}
-                    </div>
-                    <div class="flex-1">
-                      <div class="flex items-center justify-between gap-1">
-                        <div>
-                          <div>
-                            <p class="font-bold md:inline">
-                              {video.title}
-                              <p class="hidden text-xs text-neutral-300 md:inline-block">
-                                {formatNumber(video.views)} views
-                              </p>
-                            </p>
-                            <p class="text-xs text-neutral-300 md:hidden">
-                              {formatNumber(video.views)} views
-                            </p>
-                          </div>
-                          <p class="inline text-xs text-orange-500">
-                            {video.channel_name} &middot;{" "}
-                            {new Date(video.published_at).toLocaleDateString()}
-                          </p>
-                        </div>
-                        {video.is_spotlight && (
-                          <div class="shrink-0">
-                            <Star class="mt-1 h-6 w-6 text-orange-500" />
-                          </div>
-                        )}
-                      </div>
-                    </div>
-                  </a>
-                </li>
-              ))
-          }
-        </ul>
+  <VideosList server:defer>
+    <div class="mt-2 flex flex-col gap-3 md:flex-row" slot="fallback">
+      <aside class="flex shrink-0 flex-col gap-1 md:w-48">
+        {
+          links.map((link) => (
+            <a
+              href={
+                link.includes("All") ? "/videos" : `/videos?channel=${link}`
+              }
+              class:list={[
+                "flex items-center gap-3 rounded-lg px-3 py-1.5 transition-all hover:bg-orange-900/50",
+                (
+                  link.includes("All")
+                    ? Astro.url.searchParams.get("channel") === null
+                    : Astro.url.searchParams.get("channel") === link
+                )
+                  ? "bg-orange-900"
+                  : "",
+              ]}
+            >
+              <p class="font-bold">{link}</p>
+            </a>
+          ))
+        }
+      </aside>
+      <div class="flex flex-1 flex-grow flex-col gap-3">
+        <p class="text-center">Loading...</p>
       </div>
-      {
-        Object.keys(separatedVideos).map((month) => (
-          <div class="flex flex-col gap-1">
-            <div class="flex items-center gap-1.5 text-sm uppercase tracking-widest text-orange-500">
-              <div class="w-[13px] border-b border-orange-700" />
-              <p class="shrink-0">{month}</p>
-              <div class="w-full border-b border-orange-700" />
-            </div>
-            <ul class="flex flex-col">
-              {separatedVideos[month].map((video) => (
-                <li>
-                  <a
-                    href={
-                      video.url ?? `https://youtube.com/watch?v=${video.id}`
-                    }
-                    target="_blank"
-                    class="flex items-start space-x-3 rounded-lg px-4 py-3 transition-all hover:bg-orange-900/50"
-                  >
-                    <div class="shrink-0">
-                      {video.is_live ? (
-                        <Live class="mt-1 text-orange-500" />
-                      ) : (
-                        <Camera class="mt-1 text-orange-500" />
-                      )}
-                    </div>
-                    <div class="flex-1">
-                      <div class="flex items-center justify-between gap-1">
-                        <div>
-                          <div>
-                            <p class="font-bold md:inline">
-                              {video.title}
-                              <p class="hidden text-xs text-neutral-300 md:inline-block">
-                                {formatNumber(video.views)} views
-                              </p>
-                            </p>
-                            <p class="text-xs text-neutral-300 md:hidden">
-                              {formatNumber(video.views)} views
-                            </p>
-                          </div>
-                          <p class="inline text-xs text-orange-500">
-                            {video.channel_name} &middot;{" "}
-                            {new Date(video.published_at).toLocaleDateString()}
-                          </p>
-                        </div>
-                        {video.is_spotlight && (
-                          <div class="shrink-0">
-                            <Star class="mt-1 h-6 w-6 text-orange-500" />
-                          </div>
-                        )}
-                      </div>
-                    </div>
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))
-      }
     </div>
-  </div>
+  </VideosList>
 </MainLayout>
