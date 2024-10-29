@@ -16,33 +16,6 @@ const links = ["All channels", "ToastedToast", "MinMax"];
     >.
   </p>
   <VideosList server:defer>
-    <div class="mt-2 flex flex-col gap-3 md:flex-row" slot="fallback">
-      <aside class="flex shrink-0 flex-col gap-1 md:w-48">
-        {
-          links.map((link) => (
-            <a
-              href={
-                link.includes("All") ? "/videos" : `/videos?channel=${link}`
-              }
-              class:list={[
-                "flex items-center gap-3 rounded-lg px-3 py-1.5 transition-all hover:bg-orange-900/50",
-                (
-                  link.includes("All")
-                    ? Astro.url.searchParams.get("channel") === null
-                    : Astro.url.searchParams.get("channel") === link
-                )
-                  ? "bg-orange-900"
-                  : "",
-              ]}
-            >
-              <p class="font-bold">{link}</p>
-            </a>
-          ))
-        }
-      </aside>
-      <div class="flex flex-1 flex-grow flex-col gap-3">
-        <p class="text-center">Loading...</p>
-      </div>
-    </div>
+    <p class="text-center" slot="fallback">Loading...</p>
   </VideosList>
 </MainLayout>
