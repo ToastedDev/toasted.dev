@@ -48,7 +48,10 @@ export function NavDropdown({ slug }: { slug: string }) {
   return (
     <DropdownMenu.Root>
       <DropdownMenu.Trigger className="flex items-center gap-2 text-orange-500 outline-none hover:underline md:hidden">
-        <Menu className="h-8 w-8 transition-opacity hover:opacity-75" />
+        <Menu
+          className="h-8 w-8 transition-opacity hover:opacity-75"
+          aria-label="Menu"
+        />
       </DropdownMenu.Trigger>
       <DropdownMenu.Portal>
         <DropdownMenu.Content
