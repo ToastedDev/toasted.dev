@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://toasted.dev/sitemap-index.xml
