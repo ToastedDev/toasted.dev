@@ -6,6 +6,7 @@ import X from "../icons/x.astro";
 import GitHub from "../icons/github.astro";
 import Twitch from "../icons/twitch.astro";
 import { getCollection } from "astro:content";
+import Bluesky from "src/icons/bluesky.astro";
 
 function getAge(birthDate: Date) {
   var today = new Date();
@@ -65,6 +66,20 @@ const last3Posts = posts
             class="w-fit rounded-lg bg-white px-1 py-1 text-black transition-all hover:opacity-80"
           >
             <X class="h-8 w-8" />
+          </div>
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://bsky.app/profile/toasted.dev"
+          target="_blank"
+          title="Bluesky"
+          aria-label="Bluesky"
+        >
+          <div
+            class="w-fit rounded-lg bg-blue-500 px-1 py-1 transition-all hover:opacity-80"
+          >
+            <Bluesky class="h-8 w-8" />
           </div>
         </a>
       </li>
