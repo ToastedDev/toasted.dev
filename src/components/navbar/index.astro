@@ -18,17 +18,10 @@ const { slug } = Astro.locals;
   <ul class="hidden md:flex md:items-center md:gap-2">
     {
       links.map((link) => (
-        <li
-          class:list={[
-            "font-semibold underline-offset-4 transition-all hover:opacity-75",
-            (
-              link.slug
-                ? slug.startsWith(link.slug)
-                : slug === link.href || slug === link.href + "/"
-            )
-              ? "text-orange-300 underline"
-              : "text-orange-500 hover:underline",
-          ]}
+      <li
+      aria-current={(link.slug ? slug.startsWith(link.slug) : slug === link.href || slug === link.href + "/") ? "page" : undefined}
+          class=
+            "font-semibold underline-offset-4 transition-all hover:opacity-75 aria-[current=page]:text-orange-300 aria-[current=page]:underline text-orange-500 hover:underline",
         >
           <a href={link.href}>{link.name} </a>
         </li>

@@ -1,31 +1,12 @@
 import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
 import type { SVGProps } from "react";
+import { links } from "src/lib/consts";
 
 interface Link {
   name: string;
   href: string;
   slug?: string;
 }
-
-const links: Link[] = [
-  {
-    name: "Home",
-    href: "/",
-  },
-  {
-    name: "Projects",
-    href: "/projects",
-  },
-  {
-    name: "Videos",
-    href: "/videos",
-  },
-  {
-    name: "Blog",
-    href: "/blog",
-    slug: "/blog",
-  },
-];
 
 export function Menu(props: SVGProps<SVGSVGElement>) {
   return (
@@ -62,7 +43,16 @@ export function NavDropdown({ slug }: { slug: string }) {
             <DropdownMenu.Item
               key={link.href}
               asChild
-              className={`py-1 pl-4 pr-2 text-right outline-none ${(link.slug ? slug.startsWith(link.slug) : slug === link.href || slug === link.href + "/") ? "bg-orange-700" : "bg-orange-900"} transition-opacity hover:opacity-75`}
+              aria-current={
+                (
+                  link.slug
+                    ? slug.startsWith(link.slug)
+                    : slug === link.href || slug === link.href + "/"
+                )
+                  ? "page"
+                  : undefined
+              }
+              className="bg-orange-900 py-1 pl-4 pr-2 text-right outline-none transition-opacity hover:opacity-75 aria-[current=page]:bg-orange-700"
             >
               <a href={link.href}>{link.name}</a>
             </DropdownMenu.Item>
