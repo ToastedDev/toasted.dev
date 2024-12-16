@@ -1,12 +1,6 @@
 import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
 import type { SVGProps } from "react";
-import { links } from "src/lib/consts";
-
-interface Link {
-  name: string;
-  href: string;
-  slug?: string;
-}
+import { links } from "./links";
 
 export function Menu(props: SVGProps<SVGSVGElement>) {
   return (
