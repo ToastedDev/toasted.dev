@@ -17,7 +17,7 @@ I'm free.
 ![Screenshot showing that I have blocked Mathues' main account](@assets/i-cant-block-matheus/blocked-1.png)
 ![Screenshot showing that I have blocked Mathues' alt account](@assets/i-cant-block-matheus/blocked-2.png)
 
-## Original
+---
 
 All of my friends keep asking me to "just block Matheus" everytime he annoys me. But really, I can't. It's impossible for me to "just block him". Now you may be asking, "why?", and that's why I made this blog post, to finally put this question to rest.
 

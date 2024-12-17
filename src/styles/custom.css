@@ -41,7 +41,7 @@
   cursor: pointer;
 }
 
-.anchor:hover {
+.prose .anchor:hover {
   @apply opacity-100;
 }
 
@@ -52,4 +52,8 @@
 
 .prose *:hover > .anchor {
   @apply visible;
+}
+
+.prose hr {
+  @apply border border-orange-500 my-8 
 }

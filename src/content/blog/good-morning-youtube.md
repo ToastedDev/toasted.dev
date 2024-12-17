@@ -5,6 +5,16 @@ createdAt: 2024-06-10
 image: "@assets/good-morning-youtube/og.jpg"
 ---
 
+## UPDATE (12/17/2024)
+
+I forgot to update this, but during the start of November MinMax was actually banned on YouTube (why? we'll never know). Thankfully in the middle of the month they unbanned my channel, so that's good.
+
+Also apparently my first Graphify channel with over 90 subscribers was [unbanned recently](https://www.youtube.com/channel/UCw5kIzE9xi0Jqg6gbS0qCNQ)? Yeah I have a strange relationship with YouTube... I guess it's because they thought that channel was linked to MinMax and because they unbanned that they unbanned this one too? I don't know honestly.
+
+Hopefully this means the bigger channels get unbanned as well, but we'll see. I'll keep you all updated in case that happens.
+
+---
+
 On June 7th at 2:34 PM UTC, my YouTube channel with over 14,000 subscribers was terminated off of the platform. Why? Because of "circumvention of a ban". But to understand why this happened, we need to rewind back in time a bit...
 
 ## Chapter 0: Important Info
