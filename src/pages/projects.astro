@@ -4,9 +4,10 @@ import MainLayout from "../layouts/main.astro";
 
 interface Project {
   title: string;
+  subtitle?: string;
   description: string;
   href: string;
-  image: string;
+  image?: string;
   years: {
     from: number;
     to?: number;
@@ -16,8 +17,7 @@ interface Project {
 const projects: Project[] = [
   {
     title: "MinMax (previously Graphify)",
-    description:
-      "Visualizing the world with numbers and graphs.",
+    description: "Visualizing the world with numbers and graphs.",
     href: "https://youtube.com/@MinMaxStats",
     image:
       "https://yt3.ggpht.com/frgwg2HfobQ3fy6-YjFsE43yTuG0vNHTjod3FPrpOnrhVxr7Ss04M6g0H3H66GHbYWqAEs6Vvug=s176-c-k-c0x00ffffff-no-rj",
@@ -32,6 +32,15 @@ const projects: Project[] = [
     image: "/logo.png",
     years: {
       from: 2023,
+    },
+  },
+  {
+    title: "Chatr",
+    subtitle: "Contributor",
+    description: "An open-source XP bot for Discord.",
+    href: "https://chatr.fun",
+    years: {
+      from: 2024,
     },
   },
   {
@@ -51,6 +60,7 @@ const projects: Project[] = [
     image: "https://countify.fun/logo.png",
     years: {
       from: 2023,
+      to: 2024,
     },
   },
   {
@@ -66,6 +76,7 @@ const projects: Project[] = [
   },
   {
     title: "YAB ?! Counts",
+    subtitle: "Frontend developer",
     description: "Reimagining the concept of live counters.",
     href: "https://yabcounts.com",
     image:
@@ -81,8 +92,8 @@ const projects: Project[] = [
 <MainLayout title="Projects" description="Some of the projects I've worked on.">
   <h1 class="text-4xl font-bold">Projects</h1>
   <p class="mt-2">
-    Over the years I've worked on a lot of projects. Here are some that I am most
-    proud of.
+    Over the years I've worked on a lot of projects. Here are some that I am
+    most proud of.
   </p>
   <div class="mt-2 grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-2">
     {
@@ -98,14 +109,19 @@ const projects: Project[] = [
               <p class="text-xs text-neutral-300">
                 {project.years.from}-{project.years.to ?? "Now"}
               </p>
+              {project.subtitle && (
+                <p class="text-xs text-neutral-300">{project.subtitle}</p>
+              )}
             </div>
-            <Image
-              src={project.image}
-              width={50}
-              height={50}
-              alt={`${project.title} Logo`}
-              class="rounded-lg"
-            />
+            {project.image && (
+              <Image
+                src={project.image}
+                width={50}
+                height={50}
+                alt={`${project.title} Logo`}
+                class="rounded-lg"
+              />
+            )}
           </div>
           <p>{project.description}</p>
         </a>
