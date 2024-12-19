@@ -7,7 +7,6 @@ import GitHub from "../icons/github.astro";
 import Twitch from "../icons/twitch.astro";
 import { getCollection } from "astro:content";
 import Bluesky from "src/icons/bluesky.astro";
-import CurrentTime from "src/components/time.astro";
 
 function getAge(birthDate: Date) {
   var today = new Date();
@@ -129,7 +128,7 @@ const last3Posts = posts
     </ul>
   </section>
   <section class="pt-6">
-    <h2 class="text-2xl font-bold">I write sometimes</h2>
+    <h2 class="text-2xl font-bold">I also write sometimes</h2>
     <ul class="flex flex-col gap-0.5 pt-1">
       {
         last3Posts.map((post) => (
@@ -159,23 +158,5 @@ const last3Posts = posts
         ))
       }
     </ul>
-  </section>
-  <section class="pt-6">
-    <h2 class="text-2xl font-bold">I live on the other side of the world</h2>
-    <CurrentTime server:defer>
-      <div slot="fallback" class="pt-1 text-lg">
-        <p>My time: Loading...</p>
-        <p>Your time: Loading...</p>
-        <p>Difference: Loading...</p>
-        <small class="text-xs text-neutral-300">
-          *I live in the Philippines, which uses <a
-            href="https://en.wikipedia.org/wiki/Philippine_Standard_Time"
-            target="_blank"
-            class="text-orange-500 hover:underline hover:underline-offset-4"
-            >UTC+8</a
-          >
-        </small>
-      </div>
-    </CurrentTime>
   </section>
 </MainLayout>

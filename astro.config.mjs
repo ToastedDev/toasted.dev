@@ -9,7 +9,7 @@ import react from "@astrojs/react";
 import vercel from "@astrojs/vercel/serverless";
 
 function remarkReadingTime() {
-  return function (tree, { data }) {
+  return function(tree, { data }) {
     const textOnPage = toString(tree);
     const readingTime = getReadingTime(textOnPage);
     // readingTime.text will give us minutes read as a friendly string,
