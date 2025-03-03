@@ -1,5 +1,4 @@
 import sitemap from "@astrojs/sitemap";
-import tailwind from "@astrojs/tailwind";
 import { defineConfig } from "astro/config";
 import { toString } from "mdast-util-to-string";
 import getReadingTime from "reading-time";
@@ -7,6 +6,7 @@ import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import react from "@astrojs/react";
 import vercel from "@astrojs/vercel/serverless";
+import tailwindcss from "@tailwindcss/vite";
 
 function remarkReadingTime() {
   return function(tree, { data }) {
@@ -21,7 +21,10 @@ function remarkReadingTime() {
 // https://astro.build/config
 export default defineConfig({
   site: "https://toasted.dev",
-  integrations: [tailwind(), sitemap(), react()],
+  integrations: [sitemap(), react()],
+  vite: {
+    plugins: [tailwindcss()],
+  },
 
   markdown: {
     remarkPlugins: [remarkReadingTime],
