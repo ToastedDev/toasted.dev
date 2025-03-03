@@ -22,7 +22,7 @@ export function Menu(props: SVGProps<SVGSVGElement>) {
 export function NavDropdown({ slug }: { slug: string }) {
   return (
     <DropdownMenu.Root>
-      <DropdownMenu.Trigger className="flex items-center gap-2 text-orange-500 outline-none hover:underline md:hidden">
+      <DropdownMenu.Trigger className="flex items-center gap-2 text-orange-500 outline-hidden hover:underline md:hidden">
         <Menu
           className="h-8 w-8 transition-opacity hover:opacity-75"
           aria-label="Menu"
@@ -46,7 +46,7 @@ export function NavDropdown({ slug }: { slug: string }) {
                   ? "page"
                   : undefined
               }
-              className="bg-orange-900 py-1 pl-4 pr-2 text-right outline-none transition-opacity hover:opacity-75 aria-[current=page]:bg-orange-700"
+              className="bg-orange-900 py-1 pl-4 pr-2 text-right outline-hidden transition-opacity hover:opacity-75 aria-[current=page]:bg-orange-700"
             >
               <a href={link.href}>{link.name}</a>
             </DropdownMenu.Item>
