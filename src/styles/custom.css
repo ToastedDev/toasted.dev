@@ -52,7 +52,7 @@
 }
 
 ::selection {
-  @apply bg-orange-500;
+  @apply bg-orange-500 text-white;
 }
 
 .prose > :first-child:is(p) {
