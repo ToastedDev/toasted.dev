@@ -1,8 +1,8 @@
 ---
+import toastedLogo from "@/assets/toasted.jpg";
+import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
 import MainLayout from "src/layouts/main.astro";
-import toastedLogo from "@assets/toasted.jpg";
-import { Image } from "astro:assets";
 
 export async function getStaticPaths() {
   const seriesEntries = await getCollection("series");

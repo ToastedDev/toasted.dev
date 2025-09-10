@@ -1,8 +1,8 @@
 ---
+import toastedLogo from "@/assets/toasted.jpg";
+import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
 import MainLayout from "../../layouts/main.astro";
-import toastedLogo from "@assets/toasted.jpg";
-import { Image } from "astro:assets";
 
 const allPosts = await getCollection("blog");
 ---

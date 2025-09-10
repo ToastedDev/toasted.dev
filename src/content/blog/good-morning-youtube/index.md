@@ -2,7 +2,7 @@
 title: Good morning, YouTube.
 description: One night, YouTube just decided to terminate my channel out of nowhere. Here's the full story.
 createdAt: 2024-06-10
-image: "@assets/good-morning-youtube/og.jpg"
+image: "./og.jpg"
 ---
 
 ## UPDATE (12/17/2024)
